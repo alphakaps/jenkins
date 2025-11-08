@@ -2,15 +2,11 @@ docker exec -it jenkins-blueocean bash
 
 
 # Installation
-## Build the Jenkins BlueOcean Docker Image (or pull and use the one I built)
+## Build the Jenkins BlueOcean Docker Image.
 ```
 docker build -t myjenkins-blueocean:2.414.2 .
 
-#IF you are having problems building the image yourself, you can pull from my registry (It is version 2.332.3-1 though, the original from the video)
-
-docker pull devopsjourney1/jenkins-blueocean:2.332.3-1 && docker tag devopsjourney1/jenkins-blueocean:2.332.3-1 myjenkins-blueocean:2.332.3-1
 ```
-
 ## Create the network 'jenkins'
 ```
 docker network create jenkins
